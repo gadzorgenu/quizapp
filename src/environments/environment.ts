@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  apiKey: 'a4GFCLHlHfDdpZkHRNWtoEtXlyNzmBiD1iqFIm57',
-  baseUrl: 'https://quizapi.io/api/v1/'
+  apiKey: 'apiKey=a4GFCLHlHfDdpZkHRNWtoEtXlyNzmBiD1iqFIm57',
+  baseUrl: 'https://quizapi.io/api/v1'
 };
 
 /*
