@@ -5,7 +5,7 @@ import { Tag } from './Tag';
 export interface Quiz {
     id: number,
     question: string,
-    description: string | null,
+    description: string,
     answers: Answers,
     multiple_correct_answers: string,
     correct_answers: CorrectAnswers,
