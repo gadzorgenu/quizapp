@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiKey: 'a4GFCLHlHfDdpZkHRNWtoEtXlyNzmBiD1iqFIm57',
+  baseUrl: 'https://quizapi.io/api/v1/'
 };
 
 /*
