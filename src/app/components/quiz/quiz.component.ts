@@ -9,6 +9,7 @@ import { HttpErrorResponse } from '@angular/common/http';
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
+  title = 'Quiz'
   questions:Quiz[] = []
 
   constructor(private quizService: QuizService) { }
@@ -18,14 +19,14 @@ export class QuizComponent implements OnInit {
   }
 
   getQuestions(): void{
-    this.quizService.getQuestions().subscribe(
-    (response: Quiz[]) => {
+    this.quizService.getQuestions().subscribe({
+   next: (response: Quiz[]) => {
       this.questions = response;
     },
-    (error: HttpErrorResponse) => {
+   error: (error: HttpErrorResponse) => {
       alert(error.message)
     }
-    )
+  })
   }
 
 }
